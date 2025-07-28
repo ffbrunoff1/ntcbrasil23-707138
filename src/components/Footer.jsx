@@ -1,12 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Phone, MapPin } from 'lucide-react';
-
 export default function Footer() {
   const logoUrl =
     'https://qotdwocbcoirjlqjkjhq.supabase.co/storage/v1/object/public/imagens.website.creation/ad5c31a2-f045-4f97-a0ab-2d4f0e6a69e7/logo_1753726592322_0.png';
   const currentYear = new Date().getFullYear();
-
   const footerVariants = {
     hidden: { opacity: 0, y: 50 },
     visible: {
@@ -15,13 +13,11 @@ export default function Footer() {
       transition: { duration: 0.8, ease: 'easeOut' },
     },
   };
-
   const navLinks = [
     { href: '#sobre', label: 'Sobre Nós' },
     { href: '#servicos', label: 'Nossa Abordagem' },
     { href: '#contato', label: 'Contato' },
   ];
-
   return (
     <motion.footer
       className="bg-brand-dark-gray text-brand-light-gray"
@@ -41,11 +37,9 @@ export default function Footer() {
               />
             </a>
             <p className="max-w-xs text-gray-400">
-              Construindo o futuro com a solidez e a confiança que seu projeto
-              merece.
+              Drenagem com a solidez e a confiança que seu projeto merece.
             </p>
           </div>
-
           <div>
             <h3 className="font-bold text-lg text-brand-white mb-4">
               Navegação
@@ -63,7 +57,6 @@ export default function Footer() {
               ))}
             </ul>
           </div>
-
           <div>
             <h3 className="font-bold text-lg text-brand-white mb-4">
               Informações de Contato

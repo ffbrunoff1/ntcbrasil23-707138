@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
-
 export default function Hero() {
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -13,7 +12,6 @@ export default function Hero() {
       },
     },
   };
-
   const itemVariants = {
     hidden: { y: 20, opacity: 0 },
     visible: {
@@ -25,7 +23,6 @@ export default function Hero() {
       },
     },
   };
-
   return (
     <section className="relative min-h-screen flex items-center bg-hero-gradient overflow-hidden">
       <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
@@ -40,10 +37,9 @@ export default function Hero() {
             className="text-4xl md:text-6xl font-bold text-brand-dark-gray leading-tight mb-4"
             variants={itemVariants}
           >
-            Construindo o Futuro com{' '}
+            Drenagem com{' '}
             <span className="gradient-text">Qualidade e Confiança</span>
           </motion.h1>
-
           <motion.p
             className="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl"
             variants={itemVariants}
@@ -51,7 +47,6 @@ export default function Hero() {
             Transformamos visões em realidade com excelência em cada etapa do
             processo. Na NTC Brasil, seu projeto está em mãos seguras.
           </motion.p>
-
           <motion.div variants={itemVariants}>
             <a
               href="#contato"
